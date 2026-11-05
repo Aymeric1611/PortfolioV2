@@ -1,223 +1,276 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mon PortFolio</title>
+  <meta name="description" content="Portfolio d'Aymeric Joblin, étudiant en BTS SIO option SLAM.">
+  <title>Aymeric Joblin — Portfolio</title>
   <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">Aymeric Joblin</a></h1>
-      <nav class="site-nav" role="navigation" aria-label="Menu principal">
-        <a href="index.html" class="active" aria-current="page">Accueil</a>
-        <a href="CV.html">CV</a>
-        <a href="Certifications.html">Certifications</a>
-        <a href="Projets.html">Projets</a>
-        <a href="Veille technologique.html">Veille</a>
-        <a href="Stage_et_experiences_professionnelles.html">Stages</a>
-        <a href="Passions.html">Passions</a>
+    <div class="container header-inner">
+      <a class="site-title" href="#accueil">Aymeric<span>.</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#profil">Profil</a>
+        <a href="#formation">Formation</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projets">Projets</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#veille">Veille</a>
+        <a href="#passions">Passions</a>
       </nav>
     </div>
   </header>
 
-  <main class="content container">
-    <h1>Courte présentation (très courte)</h1>
-    <div>
-      • Aymeric Joblin<br>
-      • 20 ans<br>
-      • Étudiant en 2ème année de BTS SIO(Service Informatique aux Organisations)<br>
-      • Option SLAM (Solution Logicielles et Applications Métiers)
-    </div>
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio · Étudiant en informatique</p>
+          <h1>Bonjour, je suis <span>Aymeric Joblin</span></h1>
+          <p class="hero-lead">Étudiant en deuxième année de BTS Services informatiques aux organisations (SIO), option Solutions logicielles et applications métiers (SLAM).</p>
+          <p class="hero-note">Mon parcours associe formation, projets informatiques et expériences de terrain.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets">Découvrir mes projets</a>
+            <a class="button button-secondary" href="mailto:aymericjoblin@gmail.com">Me contacter</a>
+          </div>
+          <div class="hero-tags" aria-label="Informations">
+            <span>BTS SIO</span>
+            <span>Option SLAM</span>
+            <span>Développement web</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="image/photoCV.jpg" alt="Portrait d'Aymeric Joblin">
+          </div>
+          <div class="hero-caption"><span class="status-dot"></span> Étudiant en BTS SIO — option SLAM</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#profil" aria-label="Faire défiler vers la présentation">↓</a>
+    </section>
 
-    <div>
-    <h1>Mon CV</h1>
-    <p>Cliquez sur l'image pour ouvrir le CV en plein écran (il est composé de 2 pages) :
-      <a href="image/CV.pdf" target="_blank">
-        <img src="image/CV.jpg" alt="Aperçu du CV" style="max-width:70%; height:auto; display:block;" />
-      </a>
-    </p>
-  </div>
+    <section class="section section-soft" id="profil">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 — À propos</p>
+          <h2>Mon profil</h2>
+          <p>Étudiant en informatique, je développe mes compétences à travers ma formation, mes projets et mes expériences professionnelles.</p>
+        </div>
+        <div class="profile-grid">
+          <article class="card cv-card">
+            <div>
+              <p class="card-kicker">Curriculum vitæ</p>
+              <h3>Mon parcours en un coup d'œil</h3>
+              <p>Consultez ou téléchargez mon CV. Il comporte deux pages.</p>
+              <a class="text-link" href="image/CV.pdf" target="_blank" rel="noopener noreferrer">Ouvrir mon CV (PDF) <span aria-hidden="true">↗</span></a>
+            </div>
+            <a class="cv-preview" href="image/CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le CV au format PDF">
+              <img src="image/CV.jpg" alt="Aperçu de la première page du CV">
+            </a>
+          </article>
+          <article class="card fact-card">
+            <span class="fact-number">20</span>
+            <h3>ans</h3>
+            <p>Étudiant en deuxième année de BTS SIO, spécialité SLAM.</p>
+            <a class="text-link" href="mailto:aymericjoblin@gmail.com">aymericjoblin@gmail.com <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div>
-    <h1>Brevet</h1>
-    <p>J'ai obtenu mon Brevet avec mention Bien en 06/2022</p>
-    <h1>Baccalauréat</h1>
-    <p>J'ai obtenu mon Baccalauréat sans mention avec les spécialité Maths et Nsi (Numérique et Sciences de
-      l'Informatique) en 06/2025</p>
-    <h1>BAFA</h1>
-    <p>J'ai obtenu mon BAFA lors de la commission du 04/12/2025</p>
-    <h1><a href="image/certification-pix-20250213.pdf" target="_blank">
-        <img src="image/Pix_logo.jpg" alt="Aperçu de la Certifications PIX"
-          style="max-width:25%; height:auto; display:block;" /></a></h1>
-    <h1>MOOC : </h1>
-    <ul>
-      <li>
-        <h2><img src="image/logo Cnil.jpg" alt="CNIL" style="max-width:70%; height:auto; display:block;" /></h2>
-      </li>
-      <ul>
-        <li><a href="image/Attestation MOOC CNIL 1.pdf" target="_blank">Module 1 : Le RGPD et ses notions clés</a></li>
-        <li><a href="image/Attestation MOOC CNIL 2.pdf" target="_blank">Module 2 : Les principe de la protection des
-            données</a></li>
-        <li><a href="image/Attestation MOOC CNIL 3.pdf" target="_blank">Module 3 : Les responsabilités des acteurs</a>
-        </li>
-        <li><a href="image/Attestation MOOC CNIL 4.pdf" target="_blank">Module 4 : Le DPO et les outils de la
-            conformité</a></li>
-        <li><a href="image/Attestation MOOC CNIL 5.pdf" target="_blank">Module 5 : Les collectivités territoriales</a>
-        </li>
-        <li><a href="image/Attestation MOOC CNIL 6.pdf" target="_blank">Module 6 : Travail et données personnelles</a>
-        </li>
-      </ul>
-      <li>
-        <h2><a href="image/Attestation MOOC ANSSI.pdf" target="_blank">
-            <img src="image/logo Anssi.jpg" alt="Aperçu de la Certifications Anssi"
-              style="max-width:70%; height:auto; display:block;" /></a></h2>
-      </li>
-      <li>
-        <h2><a href="image/Attestation Ebios.pdf" target="_blank">
-            <img src="image/logo ebios.jpg" alt="Aperçu de la Certifications ebios"
-              style="max-width:70%; height:auto; display:block;" /></a></h2>
-      </li>
-      <li>
-        <h2><a href="image/Attestation Cyberini.pdf" target="_blank">
-          <img src="image/logo Cyberini.jpg" alt="Attestation Cyberini">
-        </a></h2>
-      </li>
-    </ul>
-    <h1>SNU</h1>
-    <p><img src="image/logo SNU.png" alt="texte alternatif" width=10% height=10% /></p>
-  </div>
+    <section class="section" id="formation">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 — Parcours</p>
+          <h2>Formation et diplômes</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">En cours</span>
+            <div><h3>BTS Services informatiques aux organisations (SIO)</h3><p>Deuxième année · Option SLAM : Solutions logicielles et applications métiers.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Juin 2025</span>
+            <div><h3>Baccalauréat</h3><p>Obtenu sans mention, avec les spécialités mathématiques et NSI (Numérique et sciences informatiques).</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Décembre 2025</span>
+            <div><h3>BAFA</h3><p>Diplôme obtenu après la commission du 4 décembre 2025.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Juin 2022</span>
+            <div><h3>Diplôme national du brevet</h3><p>Obtenu avec la mention Bien.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">SNU</span>
+            <div class="timeline-content">
+              <h3>Service national universel</h3>
+              <img class="logo-image logo-snu" src="image/logo SNU.png" alt="Logo du Service national universel">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div>
-    <h1>Mes Projets</h1>
-    <div>
-      Ce portFolio <img src="image/logo portfolio.jpg" alt="logo portfolio" width="45%" height="55%" >
-    </div>
-    <div> 
-      CinéSIO un catalogue de films
-      <img src="image/image CinéSIO.png" alt="CineSIO">
-    </div>
-    <div>
-      Site vitrine Kécolor
-      <img src="image/image site vitrine Kécolor.png" alt="Site Vitrine Kécolor">
-    </div>
-  </div>
+    <section class="section section-soft" id="certifications">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 — Compétences</p>
+          <h2>Certifications et attestations</h2>
+          <p>Quelques formations suivies autour du numérique, de la cybersécurité et de la protection des données.</p>
+        </div>
+        <div class="cert-grid">
+          <article class="card cert-card">
+            <div class="cert-logo"><img src="image/Pix_logo.jpg" alt="Logo Pix"></div>
+            <div><h3>Certification Pix</h3><a class="text-link" href="image/certification-pix-20250213.pdf" target="_blank" rel="noopener noreferrer">Consulter l'attestation <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-logo"><img src="image/logo Cnil.jpg" alt="Logo de la CNIL"></div>
+            <div>
+              <h3>MOOC de la CNIL — Protection des données</h3>
+              <ul class="link-list">
+                <li><a href="image/Attestation MOOC CNIL 1.pdf" target="_blank" rel="noopener noreferrer">Module 1 : Le RGPD et ses notions clés</a></li>
+                <li><a href="image/Attestation MOOC CNIL 2.pdf" target="_blank" rel="noopener noreferrer">Module 2 : Les principes de la protection des données</a></li>
+                <li><a href="image/Attestation MOOC CNIL 3.pdf" target="_blank" rel="noopener noreferrer">Module 3 : Les responsabilités des acteurs</a></li>
+                <li><a href="image/Attestation MOOC CNIL 4.pdf" target="_blank" rel="noopener noreferrer">Module 4 : Le DPO et les outils de la conformité</a></li>
+                <li><a href="image/Attestation MOOC CNIL 5.pdf" target="_blank" rel="noopener noreferrer">Module 5 : Les collectivités territoriales</a></li>
+                <li><a href="image/Attestation MOOC CNIL 6.pdf" target="_blank" rel="noopener noreferrer">Module 6 : Travail et données personnelles</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-logo"><img src="image/logo Anssi.jpg" alt="Logo de l'ANSSI"></div>
+            <div><h3>MOOC de l'ANSSI</h3><a class="text-link" href="image/Attestation MOOC ANSSI.pdf" target="_blank" rel="noopener noreferrer">Consulter l'attestation <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-logo"><img src="image/logo ebios.jpg" alt="Logo EBIOS"></div>
+            <div><h3>Attestation EBIOS</h3><a class="text-link" href="image/Attestation Ebios.pdf" target="_blank" rel="noopener noreferrer">Consulter l'attestation <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-logo"><img src="image/logo Cyberini.jpg" alt="Logo de Cyberini"></div>
+            <div><h3>Formation Cyberini</h3><a class="text-link" href="image/Attestation Cyberini.pdf" target="_blank" rel="noopener noreferrer">Consulter l'attestation <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div>
-    <h1>Ma veille technologique</h1>
-    <p>Aucune veille technologique pour le moment.</p>
-  </div>
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">04 — Réalisations</p>
+          <h2>Mes projets</h2>
+          <p>Des projets réalisés dans le cadre de ma formation et de mon portfolio.</p>
+        </div>
+        <div class="project-grid">
+          <article class="card project-card">
+            <img src="image/logo portfolio.jpg" alt="Visuel du portfolio">
+            <div class="project-info"><span class="project-type">Portfolio</span><h3>Ce portfolio</h3><p>Une page pour présenter mon parcours, mes projets et mes centres d'intérêt.</p></div>
+          </article>
+          <article class="card project-card">
+            <img src="image/image CinéSIO.png" alt="Aperçu du catalogue de films CinéSIO">
+            <div class="project-info"><span class="project-type">Catalogue de films</span><h3>CinéSIO</h3><p>Un catalogue de films réalisé dans le cadre de ma formation.</p></div>
+          </article>
+          <article class="card project-card">
+            <img src="image/image site vitrine Kécolor.png" alt="Aperçu du site vitrine Kécolor">
+            <div class="project-info"><span class="project-type">Site vitrine</span><h3>Kécolor</h3><p>Réalisation d'un site vitrine.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div>
-    <h1>Mes experiences professionnelles</h1>
-    <div>
-      J'ai réalisé plusieurs petits jobs d'été comme serveur et commis pour un traiteur, agent d'entretien d'espace
-      vert.<br>
-      Je suis aussi animateur au centre de loisir de la MJC de Palente pendant les vacances scolaires.
-      <img src="image/mjc palente.jpg" alt="photo MJC Palente" width=25% height=25% />
-    </div>
-    <div>
-      J'ai réalisé une mission locale à Vital Été.
-      <img src="image/vital ete.jpg" alt="Logo Vital été" width=20% height=20% />
-    </div>
+    <section class="section section-soft" id="experiences">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">05 — Terrain</p>
+          <h2>Expériences professionnelles et stages</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="card experience-card">
+            <p class="card-kicker">Emplois et animation</p>
+            <h3>Des expériences variées</h3>
+            <p>J'ai occupé plusieurs emplois saisonniers comme serveur, commis auprès d'un traiteur et agent d'entretien d'espaces verts.</p>
+            <div class="experience-media">
+              <div><p>J'exerce également comme animateur au centre de loisirs de la MJC de Palente pendant les vacances scolaires.</p><img src="image/mjc palente.jpg" alt="La MJC de Palente"></div>
+              <div><p>J'ai aussi effectué une mission locale à Vital Été.</p><img src="image/vital ete.jpg" alt="Logo de Vital Été"></div>
+            </div>
+          </article>
+          <article class="card experience-card">
+            <p class="card-kicker">Stage de troisième</p>
+            <h3>Easy Cash</h3>
+            <p>Dans un magasin d'achat et de revente de produits d'occasion, j'ai rangé des DVD, créé des étiquettes de prix et observé le processus de rachat d'articles d'occasion.</p>
+            <img class="experience-logo" src="image/easycash.png" alt="Logo d'Easy Cash">
+          </article>
+          <article class="card experience-card experience-wide">
+            <p class="card-kicker">Stage de première année de BTS</p>
+            <h3>Laboratoire ThéMA — UMLP</h3>
+            <p>Au sein du laboratoire ThéMA, j'ai découvert le CMS Joomla en refondant la page des publications du site. J'ai également utilisé l'API Symfony pour mettre en place un système de filtres et des graphiques statistiques.</p>
+            <p>J'ai corrigé des problèmes de connexion et de redirection sur le site de l'ISTA, puis refait l'interface du site d'Antiquité Avenir afin de la rendre adaptative et d'améliorer l'organisation des menus.</p>
+            <img class="experience-logo" src="image/logo thema.jpg" alt="Logo du laboratoire ThéMA">
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <h1>Mes stages</h1>
-    <div>
-      Pour mon stage de 3ème j'étais au magasin d'achat d'occasion et de revente EasyCash où j'ai rangé des DVD, créer
-      des étiquettes de prix et observer comment se déroulait le rachat d'objet d'occasion.
-      <img src="image/easycash.png" alt="texte alternatif" width=20% height=20% />
-      Lors de mon stage de fin de 1ère année de BTS, j'ai effectué mon stage dans le laboratoire ThéMA à l'UMLP en
-      développement où j'y ai appris à utiliser le CMS Joomla pour refaire la page de publication du site de ThéMA ainsi
-      que l'API Symfony pour implémenter un système de filtre et de graphique de statistique, j'ai aussi corriger les
-      probleme de connection et de redirection du site de l'ISTA et j'ai refait le frontend du site d'Antiquité Avenir
-      pour qu'il soit responsive et que l'organisation des menus soit plus armonieux
-      <img src="image/logo thema.jpg" alt="Logo ThéMA" width=25% height=25%>
-    </div>
-  </div>
+    <section class="section" id="veille">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">06 — Curiosité</p>
+          <h2>Veille technologique</h2>
+        </div>
+        <div class="card empty-state">
+          <span class="empty-icon" aria-hidden="true">↗</span>
+          <div><h3>À venir</h3><p>Je n'ai pas encore commencé de veille technologique.</p></div>
+        </div>
+      </div>
+    </section>
 
-  <div>
-    <h1>Mes Passions sont </h1>
-        <ul>
-            <li>
-                <h2>Les jeux vidéos</h2>
-            </li>
-            <p> J'ai commencé à rentrer dans le monde des jeux vidéos suite à ma découverte de Pokemon Noire.<br>
-                C'est bien plus tard, que j'ai découvert les jeux en ligne comme Overwatch 2 et Fortnite.<br>
-            <ul>
-                <li>La licence Pokémon<br>
-                    <img src="image/pokemon.jpg" alt="texte alternatif" width=20% height=20% /><br>
-                    <ul>
-                        <li>Mon premier jeu Pokemon :<br>
-                            <BLOCKQUOTE>Pokemon Noire<br>
-                                <img src="image/pokemon noir.jpg" alt="texte alternatif" width=25% height=25% /><br>
-                        </li>
-                        <li>Mon jeu Pokemon préféré :<br>
-                            <BLOCKQUOTE>Pokemon Rubis Oméga et Saphir Alpha<br>
-                                <img src="image/pokemon-omega-ruby.png" alt="texte alternatif" width=25%
-                                    height=25% /><br>
-                            </BLOCKQUOTE>
-                        </li>
-                        <li>Mon Pokémon préféré<br>
-                            <BLOCKQUOTE>Rayquaza<br>
-                                <img src="image/2384-Shiny-Rayquaza.jpg" alt="texte alternatif" width=15%
-                                    height=15% /><br>
-                            </BLOCKQUOTE>
-                    </ul>
-                </li>
-                <li>Fortnite<br>
-                    <img src="image/fortnite-logo-png_seeklogo-386456.png" alt="texte alternatif" width=20%
-                        height=20% /><br>
-                </li>
-                <li>Overwatch<br>
-                    <img src="image/Overwatch_Anniversary.png" alt="texte alternatif" width=20% height=20% /><br>
-                    Mes personnages préférés :<br>
-                    <ul>
-                        <li>Faucheur<br>
-                            <img src="image/Reaper.jpg" alt="texte alternatif" width=25% height=25% />
-                        </li>
-                        <li>Kiriko<br>
-                            <img src="image/kiriko2.jpg" alt="texte alternatif" width=15% height=15% />
-                        </li>
-                    </ul>
-
-                </li>
-                </p>
-            </ul>
-            <li>
-                <h2>Les animés et les mangas</h2>
-            </li>
-            <p> J'avais une vague connaissance des grands animes connus comme Dragon Ball et Naruto.<br>
-                Et un jour, à la télé, j'ai vu Naruto et j'ai tout de suite accrocher à ce type d'oeuvre.<br>
-                Suite à ça, j'ai regardé des centaines d'animes comme Sword Art Online, L'Attaque des Titan, Naruto,
-                Eighty-six, etc.</p><br>
-            <ul>
-                <li>Sword Art Online (SAO)<br>
-                    <img src="image/Sword-Art-Online.jpg" alt="texte alternatif" width=35% height=35% /><br>
-                </li>
-                <li>L'Attaque des Titan (SNK)<br>
-                    <img src="image/shingeki_no_kyojin_movie_1_guren_no_yumiya_3239.jpg" alt="texte alternatif"
-                        width=20% height=20% /><br>
-                </li>
-                <li>Naruto<br>
-                    <img src="image/naruto.jpg" alt="texte alternatif" width=20% height=20% /><br>
-                </li>
-                <li>86 (Eighty-six)<br>
-                    <img src="image/86.jpg" alt="texte alternatif" width=20% height=20% /><br>
-                </li>
-            </ul>
-        </ul>
-  </div>
+    <section class="section section-soft" id="passions">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">07 — En dehors du code</p>
+          <h2>Mes passions</h2>
+          <p>Les jeux vidéo, les animés et les mangas occupent une place importante dans mes loisirs.</p>
+        </div>
+        <div class="passion-block">
+          <div class="passion-intro"><span class="passion-index">01</span><div><h3>Jeux vidéo</h3><p>J'ai découvert l'univers du jeu vidéo avec <em>Pokémon Version Noire</em>. Plus tard, je me suis aussi intéressé aux jeux en ligne comme <em>Overwatch 2</em> et <em>Fortnite</em>.</p></div></div>
+          <div class="game-grid">
+            <article class="card game-card">
+              <img src="image/pokemon.jpg" alt="Illustration de la licence Pokémon">
+              <div><h4>La licence Pokémon</h4><ul><li>Mon premier jeu : <em>Pokémon Version Noire</em></li><li>Mes jeux préférés : <em>Pokémon Rubis Oméga</em> et <em>Pokémon Saphir Alpha</em></li><li>Mon Pokémon préféré : Rayquaza</li></ul></div>
+              <div class="game-gallery"><img src="image/pokemon noir.jpg" alt="Pokémon Version Noire"><img src="image/pokemon-omega-ruby.png" alt="Pokémon Rubis Oméga"><img src="image/2384-Shiny-Rayquaza.jpg" alt="Rayquaza chromatique"></div>
+            </article>
+            <article class="card game-card">
+              <img src="image/fortnite-logo-png_seeklogo-386456.png" alt="Logo de Fortnite">
+              <div><h4>Fortnite</h4><p>Un des jeux en ligne auxquels je joue.</p></div>
+            </article>
+            <article class="card game-card">
+              <img src="image/Overwatch_Anniversary.png" alt="Illustration d'Overwatch">
+              <div><h4>Overwatch</h4><p>Mes personnages préférés sont Faucheur et Kiriko.</p></div>
+              <div class="game-gallery"><img src="image/Reaper.jpg" alt="Faucheur, personnage d'Overwatch"><img src="image/kiriko2.jpg" alt="Kiriko, personnage d'Overwatch"></div>
+            </article>
+          </div>
+        </div>
+        <div class="passion-block anime-block">
+          <div class="passion-intro"><span class="passion-index">02</span><div><h3>Animés et mangas</h3><p>Je connaissais déjà quelques grands classiques comme <em>Dragon Ball</em> et <em>Naruto</em>. Un jour, j'ai regardé <em>Naruto</em> à la télévision et j'ai tout de suite accroché à cet univers. Depuis, j'ai découvert de nombreux animés, dont <em>Sword Art Online</em>, <em>L'Attaque des Titans</em> et <em>86</em>.</p></div></div>
+          <div class="anime-grid">
+            <article class="card anime-card"><img src="image/Sword-Art-Online.jpg" alt="Illustration de Sword Art Online"><h4>Sword Art Online</h4></article>
+            <article class="card anime-card"><img src="image/shingeki_no_kyojin_movie_1_guren_no_yumiya_3239.jpg" alt="Illustration de L'Attaque des Titans"><h4>L'Attaque des Titans (SNK)</h4></article>
+            <article class="card anime-card"><img src="image/naruto.jpg" alt="Illustration de Naruto"><h4>Naruto</h4></article>
+            <article class="card anime-card"><img src="image/86.jpg" alt="Illustration de 86 - Eighty-Six"><h4>86 (Eighty-Six)</h4></article>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      &copy; 2026 Aymeric Joblin — <a href="mailto:aymericjoblin@gmail.com">aymericjoblin@gmail.com</a>
+    <div class="container footer-inner">
+      <p>© 2026 Aymeric Joblin</p>
+      <a href="mailto:aymericjoblin@gmail.com">aymericjoblin@gmail.com</a>
+      <a href="#accueil">Retour en haut ↑</a>
     </div>
   </footer>
 </body>
-
 </html>
